@@ -63,7 +63,9 @@ all: package
 env:
 	@env
 
-clean:
+clean: cleanwork
+
+cleanwork:
 	rm -rf $(WORK)
 
 ifneq ($(DISTTYPE),custom)
